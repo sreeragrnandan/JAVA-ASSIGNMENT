@@ -14,15 +14,15 @@ class FindDistace{
             System.out.println("distance between present codinate and "+(i+1)+" = "+d );
  
             if (m2[i][0]>d) {
-                t=m2[i][0];
+                // t=m2[i][0];
                 m2[i][0]=d;
-                d=t;t1=m2[i][1];t2=m2[i][2];t3=m2[i][3];
+                // d=t;t1=m2[i][1];t2=m2[i][2];t3=m2[i][3];
                 m2[i][1]=m[i][0];
-                m[i][0]=t1;
+                // m[i][0]=t1;
                 m2[i][2]=m[i][1];
-                m[i][1]=t2;
+                // m[i][1]=t2;
                 m2[i][3]=m[i][2]; 
-                m[i][2]=t3;              
+                // m[i][2]=t3;              
             }
         }
         for (int i = 0; i < n-1; i++)
