@@ -1,0 +1,39 @@
+
+            if (rev > INT_MAX/10 || (rev == INT_MAX / 10 && pop > 7)) return 0;
+            if (rev < INT_MIN/10 || (rev == INT_MIN / 10 && pop < -8)) return 0;
+
+re = (int*)malloc(sizeof(returnSize));
+
+
+-------------------------------------------------
+/**
+ * Note: The returned array must be malloced, assume caller calls free().
+ */
+int* twoSum(int* nums, int numsSize, int target, int* returnSize){
+int i,j,sum=0,n1=0,n2=0,re[2];
+    
+    for(i=0;i<numsSize;i++){
+        
+         if(sum==target){
+                break;
+            }
+        n1 = i;
+        for(j=i+1;j<numsSize;j++){
+            sum = nums[i]+nums[j];
+            
+            if(sum==target){
+                n2 = j;
+                // returnSize[0] = n1;
+                 // returnSize[1] = n2;
+                break;
+                
+            }
+        }  
+    }
+  re[0]=n1;
+    re[1]=n2;
+    printf("%d\t%d,%d",n1,n2,sum);
+       // returnSize[0] = re[0];6+
+    
+    return re;
+}
